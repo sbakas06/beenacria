@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Beenacria, miele siciliano artigianale</title>
+  <desc id="desc">Immagine Open Graph con texture miele, ape stilizzata e claim.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fffaf0"/>
+      <stop offset=".45" stop-color="#f7dfaa"/>
+      <stop offset="1" stop-color="#d9791c"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="360" x2="820" y1="100" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd95d"/>
+      <stop offset=".6" stop-color="#f48a22"/>
+      <stop offset="1" stop-color="#f16a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="90" r="240" fill="#fffaf0" opacity=".38"/>
+  <circle cx="120" cy="560" r="260" fill="#8f9477" opacity=".2"/>
+  <path d="M458 250 C500 212 554 199 620 224 C594 256 580 290 594 324 C530 328 486 306 442 270 Z" fill="none" stroke="url(#stroke)" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+  <path d="M618 218 C558 162 544 116 586 102 C636 90 680 140 716 226 C666 198 640 210 618 218 Z" fill="none" stroke="url(#stroke)" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+  <path d="M708 202 C698 136 722 100 756 108 C794 118 806 166 800 222" fill="none" stroke="url(#stroke)" stroke-linecap="round" stroke-width="18"/>
+  <path d="M712 326 C744 348 788 328 800 292" fill="none" stroke="url(#stroke)" stroke-linecap="round" stroke-width="18"/>
+  <text x="600" y="438" text-anchor="middle" font-family="Georgia, serif" font-size="96" letter-spacing="10" fill="#5f3a10">BEENACRIA</text>
+  <text x="600" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" letter-spacing="19" fill="#f16a1a">SICILY</text>
+  <text x="600" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5f3a10">Il miele che racconta la Sicilia.</text>
+</svg>
