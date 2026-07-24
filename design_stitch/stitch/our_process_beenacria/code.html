@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beenacria - Production Process</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#6b4900",
+                        "inverse-primary": "#7e5700",
+                        "surface-container-lowest": "#0e0e0d",
+                        "secondary-fixed-dim": "#e7bf99",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "outline": "#9e8e78",
+                        "on-surface-variant": "#d6c4ac",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#ffba35",
+                        "inverse-on-surface": "#30312e",
+                        "on-tertiary": "#313030",
+                        "inverse-surface": "#e4e2de",
+                        "outline-variant": "#514532",
+                        "primary-container": "#ffb400",
+                        "on-secondary-container": "#d8b18c",
+                        "on-background": "#e4e2de",
+                        "on-secondary-fixed-variant": "#5c4124",
+                        "on-tertiary-container": "#504f4f",
+                        "tertiary": "#e0dddc",
+                        "surface-container-highest": "#343533",
+                        "on-primary": "#422c00",
+                        "on-secondary": "#432b10",
+                        "surface": "#131412",
+                        "secondary-container": "#5f4426",
+                        "surface-tint": "#ffba35",
+                        "on-error": "#690005",
+                        "surface-bright": "#393937",
+                        "on-primary-fixed-variant": "#5f4100",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131412",
+                        "surface-container-high": "#2a2a28",
+                        "on-secondary-fixed": "#2b1701",
+                        "secondary": "#e7bf99",
+                        "surface-container-low": "#1b1c1a",
+                        "secondary-fixed": "#ffdcbc",
+                        "primary": "#ffd89c",
+                        "tertiary-container": "#c4c1c1",
+                        "surface-dim": "#131412",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-surface": "#e4e2de",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#343533",
+                        "surface-container": "#1f201e",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffdeac",
+                        "on-primary-fixed": "#281900"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "grid-gutter": "32px",
+                        "container-padding": "24px",
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"]
+                    },
+                    fontSize: {
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "label-caps": ["12px", { lineHeight: "1.4", letterSpacing: "0.1em", fontWeight: "500" }],
+                        "headline-xl": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "headline-xl-mobile": ["40px", { lineHeight: "1.1", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .organic-mask {
+            mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="black" d="M42.7,-73.4C55.9,-67.8,67.6,-57.4,75.2,-44.5C82.8,-31.6,86.4,-15.8,85.5,-0.5C84.6,14.8,79.2,29.6,70.5,41.9C61.8,54.2,49.8,64,36.2,71.2C22.6,78.4,7.4,83.1,-7.2,84.1C-21.8,85.1,-35.8,82.4,-49,75.3C-62.2,68.2,-74.6,56.7,-81.9,42.5C-89.2,28.3,-91.4,11.4,-88.7,-4.8C-86,-21,-78.4,-36.5,-67.7,-48.6C-57,-60.7,-43.2,-69.4,-29.4,-74.5C-15.6,-79.6,-1.8,-81.1,12.5,-79C26.8,-76.9,41.1,-71.2,42.7,-73.4Z" transform="translate(100 100)" /></svg>');
+            mask-size: cover;
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-number {
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.8;
+        }
+
+        .step-indicator {
+            position: relative;
+        }
+        .step-indicator::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,180,0,0.5) 0%, rgba(255,180,0,0) 100%);
+            z-index: 0;
+            transform: translateY(-50%);
+        }
+        .step-item:last-child .step-indicator::after {
+            display: none;
+        }
+        
+        /* Hide scrollbar for horizontal scroll area */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen font-body-md selection:bg-primary/30 selection:text-primary-fixed">
+<!-- Top Navigation Placeholder (TopAppBar pattern) -->
+<header class="fixed w-full z-50 transition-all duration-300 bg-background/80 dark:bg-background/80 backdrop-blur-xl border-b border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-grid-gutter py-stack-md max-w-7xl mx-auto">
+<a class="font-headline-md text-headline-md font-semibold tracking-tight text-on-background dark:text-on-background hover:opacity-80 transition-opacity" href="#">
+                Beenacria
+            </a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Our Honey</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Heritage</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">FAQ</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2 rounded-full bg-primary text-on-primary font-label-caps text-label-caps hover:bg-primary-fixed transition-colors" href="#">
+                    Shop Now
+                </a>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-section-gap">
+<!-- Production Process Section -->
+<section class="w-full max-w-7xl mx-auto px-container-padding lg:px-grid-gutter relative">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4 uppercase">Process</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">L'arte della Natura</h2>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Scroll Container -->
+<div class="glass-panel rounded-2xl p-8 lg:p-12 relative overflow-hidden">
+<!-- Ambient glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="flex overflow-x-auto gap-8 lg:gap-16 pb-8 no-scrollbar snap-x snap-mandatory step-container">
+<!-- Step 1 -->
+<div class="step-item flex-shrink-0 w-[280px] lg:w-[320px] snap-center group relative z-10">
+<div class="relative mb-12 flex justify-center step-indicator">
+<span class="absolute -top-16 left-1/2 -translate-x-1/2 text-[120px] font-headline-xl font-bold glass-number leading-none pointer-events-none select-none">01</span>
+<div class="w-32 h-32 organic-mask relative z-10 shadow-[0_0_40px_rgba(255,180,0,0.15)] group-hover:scale-105 transition-transform duration-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro photography shot of vibrant yellow wildflowers blooming in a lush, green Sicilian meadow. The lighting is soft, morning golden hour, emphasizing the delicate petals and creating a bright, organic aesthetic. Editorial style, high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD43E4JibUPJaZ_WhqhnqSm_W5MoAcsts0XtY-dn6LsTcbAJSNPkFss-9ngW3wN_AEuA2wAra9HpDjeQCpWkuDQDUH1qxUAgLJUKiNYG-g8weaXXZ48SPg59dMFi-Ywtx6NTK3yASdkX9FvkS07nApLuglQzWcKa4Df6eb8ShfHwKaqWP6c4rfhTWfo9Fe5jIKkFJ0b_KwovDWAk6DD8DHs3OCGv22Qt6rD5XobEPYRgwY-crv1kEfNCrhfmacd3vw0vtl0m-m6THkv"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-20 shadow-[0_0_15px_rgba(255,180,0,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Fioritura</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            La danza inizia nei campi incontaminati, dove le api selezionano solo i fiori più puri sotto il sole siciliano.
+                        </p>
+</div>
+<!-- Step 2 -->
+<div class="step-item flex-shrink-0 w-[280px] lg:w-[320px] snap-center group relative z-10">
+<div class="relative mb-12 flex justify-center step-indicator">
+<span class="absolute -top-16 left-1/2 -translate-x-1/2 text-[120px] font-headline-xl font-bold glass-number leading-none pointer-events-none select-none">02</span>
+<div class="w-32 h-32 organic-mask relative z-10 shadow-[0_0_40px_rgba(255,180,0,0.15)] group-hover:scale-105 transition-transform duration-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of a golden honeycomb inside a wooden beehive, dripping with viscous amber honey. Warm, rich lighting highlighting the hexagonal texture and the glowing translucency of the honey. High-end, luxury organic photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdgtKUP9rOLZTGV8NspRg-XiQfyAsiwT8GoxYb1f9kYleO9DaaewVXNFxmiJFt13mGaK9vaXfVlb_SrEBtEapJ4dtfhUEj3bD4QKglgpfnEPq6BUik8Q7m3ZblNUv06cl6LGbYfQsh6Zbgzczm9-4odR6sbgHxOVwQWWEHOsihyQqsiDARocDatQDfTbDr7PegiT-iuOMDpVanVNY54d_I-fpRMhHpJEsd6a_8gZ7kANPkDYjkfqOyLNL8-LMpx98kU4pnp1NGhygr"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-20 shadow-[0_0_15px_rgba(255,180,0,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Alveare</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            All'interno dell'arnia, il nettare viene trasformato con pazienza millenaria in oro liquido.
+                        </p>
+</div>
+<!-- Step 3 -->
+<div class="step-item flex-shrink-0 w-[280px] lg:w-[320px] snap-center group relative z-10">
+<div class="relative mb-12 flex justify-center step-indicator">
+<span class="absolute -top-16 left-1/2 -translate-x-1/2 text-[120px] font-headline-xl font-bold glass-number leading-none pointer-events-none select-none">03</span>
+<div class="w-32 h-32 organic-mask relative z-10 shadow-[0_0_40px_rgba(255,180,0,0.15)] group-hover:scale-105 transition-transform duration-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An artisanal beekeeper's hands in protective gear gently extracting a frame of honeycomb. The background is a soft, blurred landscape of rolling hills. Cinematic lighting, emphasizing craftsmanship and tradition in a high-end editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa8ekgRCgjIbnulxTsu2JocOWVNIZBxWB_400LvOkc4zD9jMb_3pSLPgYdFE8Tg4JQbSkUl_83KWMwnuPAdrSjj_CHWhx9VssnlWYCrPqeIm-UZeEhOQfbX-91hcKli1BSqr6k8RYDvx2NKhJZ8Y5MZ4LugpJb_AAn5sTdUpM6NS-EjDluZhEBFsL8wv6adax5q0czjH0CxzvSrLJvNu09AvbGV_2Xukstv1TYpYaUT_2UfMIUjEmccj5Cr1HW9_7CKdpRnnvh16ZT"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-20 shadow-[0_0_15px_rgba(255,180,0,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Raccolta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Estrazione a freddo, senza forzature, rispettando i tempi della natura per mantenere intatte le proprietà biologiche.
+                        </p>
+</div>
+<!-- Step 4 -->
+<div class="step-item flex-shrink-0 w-[280px] lg:w-[320px] snap-center group relative z-10">
+<div class="relative mb-12 flex justify-center step-indicator">
+<span class="absolute -top-16 left-1/2 -translate-x-1/2 text-[120px] font-headline-xl font-bold glass-number leading-none pointer-events-none select-none">04</span>
+<div class="w-32 h-32 rounded-2xl bg-surface-container-high relative z-10 shadow-[0_0_40px_rgba(255,180,0,0.1)] group-hover:scale-105 transition-transform duration-700 overflow-hidden border border-outline-variant/30 flex items-center justify-center p-4">
+<img class="w-full h-full object-contain drop-shadow-2xl" data-alt="A sleek, minimalist glass jar filled with golden honey, featuring a sophisticated, boutique label. Set against a dark charcoal background with a single dramatic spotlight highlighting the amber liquid inside. Luxury product photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZvGWrRj5Iv_MkDEvJIzcagFdim0CHigKc39lVAfHCd4nuPJOVCcX7T3qbOgj4vGhyJCnTrS11q0RfH1SNrEF0TUgDVRA4QNUBIrVZZc52vpOXZDvLL9K3v7ttfmZdALJb-usTg8pbhZQFqNEpvG6SKq5FkEhsKxltH7EugqniIhgZOwm1Htb-dCvvYjVbjGUPj-1AtDlR2qAgR7HhfZrmOS-86al1FyF6lfPbSdvMmVUmtg4qFGKGPcET8gbmX99FdCSDbRtNxkmZ"/>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-20 shadow-[0_0_15px_rgba(255,180,0,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Vasetto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Confezionato con cura artigianale, pronto per portare l'essenza della Sicilia sulla tua tavola.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Placeholder -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 relative w-full">
+<div class="flex flex-col gap-stack-lg w-full px-grid-gutter py-section-gap max-w-7xl mx-auto">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-8">
+                Beenacria
+            </div>
+<div class="flex flex-wrap gap-8 justify-between">
+<nav class="flex gap-6 flex-wrap">
+<a class="font-label-caps text-label-caps text-on-tertiary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-tertiary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Terms of Service</a>
+<a class="font-label-caps text-label-caps text-on-tertiary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Shipping</a>
+<a class="font-label-caps text-label-caps text-on-tertiary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Returns</a>
+<a class="font-label-caps text-label-caps text-on-tertiary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Sustainability</a>
+</nav>
+</div>
+<div class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim mt-8 border-t border-outline-variant/10 pt-8">
+                © 2024 Beenacria Artisanal Honey. Crafted in Sicily.
+            </div>
+</div>
+</footer>
+</body></html>
