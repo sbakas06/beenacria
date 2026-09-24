@@ -628,32 +628,6 @@ h2 {
   background: rgba(255, 180, 0, 0.28);
 }
 
-.process-flow::before,
-.process-flow::after,
-.process-flow span {
-  position: absolute;
-  top: 50%;
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  content: "";
-  background: var(--gold-500);
-  box-shadow: 0 0 0 0.55rem rgba(255, 180, 0, 0.09), 0 0 2rem rgba(255, 180, 0, 0.45);
-  transform: translate(-50%, -50%);
-}
-
-.process-flow::before {
-  left: 0;
-}
-
-.process-flow span {
-  left: 50%;
-}
-
-.process-flow::after {
-  left: 100%;
-}
-
 .process-image {
   position: relative;
   width: clamp(9rem, 15vw, 12rem);
@@ -1633,25 +1607,6 @@ h2 {
     left: calc(1.5rem + 4rem);
     width: 1px;
     height: auto;
-  }
-
-  .process-flow::before {
-    top: 0;
-    left: 50%;
-  }
-
-  .process-flow span {
-    top: 50%;
-    left: 50%;
-  }
-
-  .process-flow span {
-    width: 0.55rem;
-  }
-
-  .process-flow::after {
-    top: 100%;
-    left: 50%;
   }
 
   .process-image {

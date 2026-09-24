@@ -67,17 +67,17 @@ export const timeline: TimelineStep[] = [
 export const sequenceChapters: SequenceChapter[] = [
   {
     label: "Fioriture",
-    title: "Ogni raccolto comincia molto prima del vasetto.",
+    title: "Ogni raccolto comincia molto prima del vasetto",
     text: "Comincia nel sole, nel vento e nei fiori dell'entroterra. Noi osserviamo e aspettiamo il momento giusto."
   },
   {
     label: "Cura",
-    title: "Sono le api a dettare il tempo.",
+    title: "Sono le api a dettare il tempo",
     text: "Entriamo in apiario con attenzione, leggiamo il ritmo delle famiglie e interveniamo soltanto quando serve."
   },
   {
     label: "Raccolta",
-    title: "Prendiamo solo ciò che è pronto.",
+    title: "Prendiamo solo ciò che è pronto",
     text: "Il resto rimane all'alveare. È una scelta semplice: rispettare la natura prima ancora di raccoglierne il miele."
   }
 ];
@@ -121,9 +121,9 @@ export const sicilyNotes: ValueCard[] = [
 export const galleryItems: GalleryItem[] = [
   {
     title: "I formati",
-    caption: "Miele millefiori nei formati da 1 kg, 500 g e 250 g.",
-    src: imageKitUrl("miele_formati.png", "w-1600,q-82,f-auto"),
-    alt: "Tre vasetti di miele Beenacria nei formati da un chilo, cinquecento e duecentocinquanta grammi",
+    caption: "Miele millefiori nei formati da 1 kg, 500 g e 120 g.",
+    src: "/assets/miele_formati_120g.png",
+    alt: "Tre vasetti di miele Beenacria nei formati da un chilo, cinquecento e centoventi grammi",
     shape: "wide",
     focal: "center center"
   },

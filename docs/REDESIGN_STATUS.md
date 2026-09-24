@@ -13,7 +13,7 @@ Il redesign `Liquid Gold Editorial` è implementato, validato ed esportabile sta
 - Design ufficiale: esportazione locale `design_stitch/stitch`.
 - Identificatore locale: `design_stitch/stitch::liquid_gold_editorial`.
 - Schermate analizzate: hero, product showcase, process, heritage/territory, gallery/connect e `DESIGN.md`.
-- Asset reali: cartella pubblica ImageKit `/assets`; copie sorgente locali in `assets`.
+- Asset reali: cartella pubblica ImageKit `/assets`; copie sorgente locali in `assets`. La foto dei formati aggiornata è servita da `public/assets`.
 
 ## Risultato
 
@@ -25,8 +25,8 @@ Il redesign `Liquid Gold Editorial` è implementato, validato ed esportabile sta
 - Processo trasformato in una timeline luminosa orizzontale/verticale.
 - Transizioni organiche reali fra fondi charcoal e crema.
 - OpenStreetMap incorporata tramite iframe reale per Beenacria, Contrada Fontanelle.
-- Nuove fotografie di apiario, fondatori e formati integrate e ottimizzate in WebP.
-- Prodotto aggiornato con formati da 1 kg, 500 g e 250 g, visual orizzontale integrale e profilo sensoriale editoriale.
+- Nuove fotografie di apiario e fondatori integrate e ottimizzate in WebP; foto dei formati aggiornata in PNG locale.
+- Prodotto aggiornato con formati da 1 kg, 500 g e 120 g, visual orizzontale integrale e profilo sensoriale editoriale.
 - Facebook, Instagram, indicazioni, FAQ native, menu mobile e ancore funzionanti.
 - Navbar rifinita con logo completo, CTA più leggera e menu mobile editoriale.
 - Sezione Sicilia ricomposta con fotografia, citazione, coordinate narrative e indirizzo.

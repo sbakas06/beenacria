@@ -524,7 +524,7 @@ export function HomeExperience() {
           <section id="home" className="hero-section">
             <motion.div className="hero-copy" style={{ y: reduceMotion ? 0 : heroTextY }}>
               <p className="eyebrow">Miele artigianale siciliano</p>
-              <h1>Il miele che racconta la Sicilia.</h1>
+              <h1>Il miele che racconta la Sicilia</h1>
               <p className="hero-intro">
                 Due giovani apicoltori, fioriture dell&apos;entroterra e cura autentica in ogni vasetto.
               </p>
@@ -559,12 +559,12 @@ export function HomeExperience() {
             <div className="product-copy">
               <div className="product-title">
                 <p className="eyebrow">Il prodotto</p>
-                <h2>Miele siciliano, vivo e sincero.</h2>
+                <h2>Miele siciliano, vivo e sincero</h2>
               </div>
               <div className="product-meta">
-                <p className="lead">Tre formati: 1 kg, 500 g e 250 g.</p>
+                <p className="lead">Tre formati: 1 kg, 500 g e 120 g.</p>
                 <p className="product-formats">
-                  Il 250 g è pensato anche per bomboniere, piccoli doni e occasioni speciali.
+                  Il 120 g è pensato anche per bomboniere, piccoli doni e occasioni speciali.
                 </p>
                 <ActionLink href={instagramUrl} variant="secondary" ariaLabel="Apri Instagram Beenacria">
                   Chiedi disponibilità
@@ -573,8 +573,8 @@ export function HomeExperience() {
             </div>
             <motion.figure className="product-visual" whileHover={{ scale: 1.012 }} transition={{ duration: 0.5 }}>
               <Image
-                src={imageKitUrl("miele_formati.png", "w-1800,q-84,f-auto")}
-                alt="Miele Beenacria nei formati da un chilo, cinquecento e duecentocinquanta grammi"
+                src="/assets/miele_formati_120g.png"
+                alt="Miele Beenacria nei formati da un chilo, cinquecento e centoventi grammi"
                 fill
                 sizes="(max-width: 1100px) 92vw, 52vw"
               />
@@ -592,12 +592,10 @@ export function HomeExperience() {
           <SectionReveal id="processo" className="section process-section">
             <div className="section-heading">
               <p className="eyebrow">Il processo</p>
-              <h2>L&apos;arte della natura.</h2>
+              <h2>L&apos;arte della natura</h2>
             </div>
             <div className="process-panel">
-              <div className="process-flow" aria-hidden="true">
-                <span />
-              </div>
+              <div className="process-flow" aria-hidden="true" />
               {timeline.map((step, index) => (
                 <article key={step.title}>
                   <div className="process-image">
@@ -637,7 +635,7 @@ export function HomeExperience() {
             </div>
             <div className="heritage-copy">
               <p className="eyebrow">Chi siamo</p>
-              <h2>Una piccola realtà siciliana.</h2>
+              <h2>Una piccola realtà siciliana</h2>
               <p className="lead">
                 Beenacria nasce a Caltanissetta da una passione semplice: seguire le api, rispettare la natura e portare nel vasetto un pezzo di Sicilia.
               </p>
@@ -647,7 +645,7 @@ export function HomeExperience() {
           <SectionReveal id="api" className="section landscape-section">
             <div className="landscape-copy">
               <p className="eyebrow">Api e paesaggio</p>
-              <h2>Piccole presenze che tengono acceso il paesaggio.</h2>
+              <h2>Piccole presenze che tengono acceso il paesaggio</h2>
               <p className="lead">
                 Le api custodiscono biodiversità, impollinano fiori e colture e raccontano la salute dell&apos;ambiente.
               </p>
@@ -674,7 +672,7 @@ export function HomeExperience() {
           <SectionReveal id="sicilia" className="section territory-strip">
             <div className="territory-heading">
               <p className="eyebrow">Sicilia</p>
-              <h2>Ogni goccia nasce da un paesaggio.</h2>
+              <h2>Ogni goccia nasce da un paesaggio</h2>
               <p className="territory-intro">
                 Sole, vento e fioriture dell&apos;entroterra: il miele conserva ciò che incontra.
               </p>
@@ -719,7 +717,7 @@ export function HomeExperience() {
         <SectionReveal id="gallery" className="section gallery-section">
           <div className="section-heading">
             <p className="eyebrow">Gallery</p>
-            <h2>Materia, luce, api e territorio.</h2>
+            <h2>Materia, luce, api e territorio</h2>
           </div>
           <Gallery />
         </SectionReveal>
@@ -729,7 +727,7 @@ export function HomeExperience() {
             <p className="eyebrow">FAQ</p>
             <h2>
               <span>Domande semplici,</span>
-              <span>risposte sincere.</span>
+              <span>risposte sincere</span>
             </h2>
           </div>
           <div className="faq-list">
@@ -748,7 +746,7 @@ export function HomeExperience() {
         <SectionReveal id="contatti" className="section contact-section">
           <div className="contact-copy">
             <p className="eyebrow">Contatti</p>
-            <h2>Scrivici per conoscere disponibilità e formati.</h2>
+            <h2>Scrivici per conoscere disponibilità e formati</h2>
             <p className="lead">La produzione segue le stagioni. Contattaci sui canali ufficiali per sapere cosa è disponibile.</p>
             <div className="social-links" aria-label="Canali Beenacria">
               <a href={facebookUrl} aria-label="Pagina Facebook Beenacria">
