@@ -469,18 +469,18 @@ function JsonLd() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://beenacria.it/#organization",
+        "@id": "https://beenacria.com/#organization",
         name: "Beenacria",
-        url: "https://beenacria.it",
+        url: "https://beenacria.com",
         sameAs: [facebookUrl, instagramUrl],
-        logo: "https://beenacria.it/og-image.svg",
+        logo: "https://beenacria.com/og-image.svg",
         description: "Micro attività siciliana di apicoltura artigianale a Caltanissetta."
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://beenacria.it/#localbusiness",
+        "@id": "https://beenacria.com/#localbusiness",
         name: "Beenacria",
-        url: "https://beenacria.it",
+        url: "https://beenacria.com",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Contrada Fontanelle",

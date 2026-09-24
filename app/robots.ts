@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://beenacria.it/sitemap.xml"
+    sitemap: "https://beenacria.com/sitemap.xml"
   };
 }
