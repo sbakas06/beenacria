@@ -66,17 +66,17 @@ export const timeline: TimelineStep[] = [
 
 export const sequenceChapters: SequenceChapter[] = [
   {
-    label: "01 / Fioriture",
+    label: "Fioriture",
     title: "Ogni raccolto comincia molto prima del vasetto.",
     text: "Comincia nel sole, nel vento e nei fiori dell'entroterra. Noi osserviamo e aspettiamo il momento giusto."
   },
   {
-    label: "02 / Cura",
+    label: "Cura",
     title: "Sono le api a dettare il tempo.",
     text: "Entriamo in apiario con attenzione, leggiamo il ritmo delle famiglie e interveniamo soltanto quando serve."
   },
   {
-    label: "03 / Raccolta",
+    label: "Raccolta",
     title: "Prendiamo solo ciò che è pronto.",
     text: "Il resto rimane all'alveare. È una scelta semplice: rispettare la natura prima ancora di raccoglierne il miele."
   }

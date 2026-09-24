@@ -545,8 +545,7 @@ h2 {
   border-right: 0;
 }
 
-.honey-profile dt,
-.process-number {
+.honey-profile dt {
   color: var(--gold-500);
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -678,37 +677,10 @@ h2 {
   background: linear-gradient(140deg, rgba(255, 195, 74, 0.08), transparent 46%, rgba(13, 14, 12, 0.24));
 }
 
-.process-number {
-  position: absolute;
-  z-index: 2;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  width: 2.8rem;
-  height: 2.8rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--charcoal-950);
-  background: var(--gold-500);
-  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.3);
-  font-size: 0.72rem;
-  letter-spacing: 0;
-}
-
 .process-copy {
   max-width: 20rem;
   margin: 0 auto;
   text-align: center;
-}
-
-.process-phase {
-  display: block;
-  margin-bottom: 0.75rem;
-  color: var(--gold-500);
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .process-panel h3,
@@ -986,7 +958,7 @@ h2 {
 .territory-values article {
   min-height: 0;
   display: grid;
-  grid-template-columns: 2.2rem auto 1fr;
+  grid-template-columns: auto 1fr;
   align-items: start;
   gap: 1rem;
   border-bottom: 1px solid var(--line-dark);
@@ -1000,13 +972,6 @@ h2 {
 
 .territory-values p {
   margin-top: 0.6rem;
-}
-
-.territory-index {
-  color: #9b6200;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
 }
 
 .location-link {
@@ -1467,7 +1432,7 @@ h2 {
   .mobile-nav a {
     min-height: 4.15rem;
     display: grid;
-    grid-template-columns: 2rem 1fr auto;
+    grid-template-columns: 1fr auto;
     align-items: center;
     gap: 0.8rem;
     border-bottom: 1px solid var(--line);
@@ -1488,13 +1453,6 @@ h2 {
   .mobile-nav a:focus-visible {
     padding-left: 0.5rem;
     color: var(--gold-400);
-  }
-
-  .mobile-nav__index {
-    color: var(--gold-500);
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    font-weight: 700;
   }
 
   .mobile-nav a svg {
@@ -1889,7 +1847,7 @@ h2 {
   }
 
   .territory-values article {
-    grid-template-columns: 1.8rem auto 1fr;
+    grid-template-columns: auto 1fr;
     gap: 0.75rem;
   }
 
@@ -1920,14 +1878,6 @@ h2 {
     top: 4.75rem;
     bottom: 4.75rem;
     left: calc(0.75rem + 2.75rem);
-  }
-
-  .process-number {
-    right: -0.25rem;
-    bottom: -0.15rem;
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.62rem;
   }
 
   .process-panel h3 {

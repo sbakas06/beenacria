@@ -345,9 +345,8 @@ function SiteHeader() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
           >
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
-                <span className="mobile-nav__index">{String(index + 1).padStart(2, "0")}</span>
                 <span>{item.label}</span>
                 <ArrowRight aria-hidden="true" />
               </a>
@@ -614,10 +613,8 @@ export function HomeExperience() {
                       fill
                       sizes="160px"
                     />
-                    <span className="process-number">{String(index + 1).padStart(2, "0")}</span>
                   </div>
                   <div className="process-copy">
-                    <span className="process-phase">Fase {String(index + 1).padStart(2, "0")}</span>
                     <h3>{step.title}</h3>
                     <p>{step.text}</p>
                   </div>
@@ -698,9 +695,8 @@ export function HomeExperience() {
               <div className="territory-details">
                 <p className="territory-quote">“Ogni raccolto porta con sé la luce della sua stagione.”</p>
                 <div className="territory-values">
-                  {sicilyNotes.map((item, index) => (
+                  {sicilyNotes.map((item) => (
                     <article key={item.title}>
-                      <span className="territory-index">{String(index + 1).padStart(2, "0")}</span>
                       <item.icon aria-hidden="true" />
                       <div>
                         <h3>{item.title}</h3>
